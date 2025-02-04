@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bug Report</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="heading">To The New</div>
+            <div class="link">
+                <a href="">Home</a>
+                <a href="">Quick Help</a>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="header">Bug Reports</div>
+            <form action="">
+                <label for="title">Title:*</label>
+                <input type="text" id="title" required>
+                <label for="description">Description:*</label>
+                <textarea id="description" rows="4" required></textarea>
+                <label for="os">Operating system:</label>
+                <select id="os">
+                    <option>Windows XP</option>
+                    <option>Windows 10</option>
+                    <option>Linux</option>
+                </select>
+
+                <label for="product">Product:*</label>
+                <select id="product">
+                    <option>Formoid</option>
+                    <option>Other</option>
+                </select>
+                <label for="version">Version:*</label>
+                <textarea id="version" required cols="30" rows="2"></textarea>
+                <label>License:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="license" value="free"> Free</label>
+                    <label><input type="radio" name="license" value="business"> Business</label>
+                </div>
+
+                <label for="severity">Severity:</label>
+                <select id="severity">
+                    <option>Critical</option>
+                    <option>Major</option>
+                    <option>Minor</option>
+                </select>
+                <label for="attachment" class="attachment">Attachments:</label>
+                <div class="custom-file">
+                    <input type="file" id="attachment" class="file-input">
+                    <span class="file-label">No file selected</span>
+                    <label for="attachment" class="file-button">Choose File</label>
+                </div>
+
+                <div class="grey">
+                    <button type="submit" class="btn">Send</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
